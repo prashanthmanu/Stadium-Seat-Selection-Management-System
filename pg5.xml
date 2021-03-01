@@ -1,0 +1,14 @@
+<?xml-stylesheet type="text/css" href="a.css"?>
+<html>
+<h1>Student information</h1>
+<students>
+   <student>
+      <usn>USN:3BR15CS098</usn>
+      <name>NAME:Rohith</name>
+      <college>COLLEGE:BITM</college>
+      <branch>BRANCH:CSE</branch>
+      <year>YEAR:2015</year>
+      <email>EMAIL:rohith@gmail.com</email>
+   </student>
+</students>
+</html>

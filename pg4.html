@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<body>
+<script type="text/javascript">
+var str=prompt("Enter the input String","");
+if(!(isNaN(str)))
+{
+var rem,rev=0,n;
+n=parseInt(str);
+while(n!=0)
+{
+rem=n%10;
+rev=rev*10+rem;
+n=parseInt(n/10);
+}
+alert("The reverse of"+str+"is"+rev+);
+}
+else
+{
+str=str.touppercase();
+for(var i=0;i<str.length;i++)
+{
+ var chr=str.charAt(i);
+ if(chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')
+{
+alert("The position of left most vowel is"+(i+1));
+break;
+}
+}
+if(i<str.length)
+alert("Done!!");
+else
+alert("No vowel String found");
+}
+</script>
+</body>
+</html>

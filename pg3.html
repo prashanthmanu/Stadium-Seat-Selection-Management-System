@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Text growing and Shrinking</title>
+<style type="text/css">
+p{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);}
+</style>
+<body>
+<p id="demo"/>
+<script type="text/javascript">
+var var1=setInterval(interval,100);
+var fs=5;
+var ids=document.getElementById("demo");
+function interval(){
+ids.innerHTML="TEXT-GROWING";
+ids.setAttribute('style',"font-size:"+fs+"px;color:red");
+fs=fs+5;
+if(fs>=50)
+{
+ clearInterval(var1);
+var var2=setInterval(deinterval,100);
+}
+}
+function deinterval(){
+ids.innerHTML="TEXT-SHRINKING";
+ids.setAttribute('style',"font-size:"+fs+"px;color:blue");
+fs=fs-5;
+if(fs==50)
+{
+ clearInterval(var2);
+}
+}
+</script>
+</body>
+</html>
